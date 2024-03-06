@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p>
+			<strong>Yining Bei</strong> — <em>yining25@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+	<h2>Dataset: Civilian Complaints Against New York City Police Officers</h2>
+    <h2>Proposition: From 1985 to 2020, the ethnicity of officers are correlated with the type and frequency of complaints made against them.</h2>
+
+		<section>
+      <h3>FOR the Proposition</h3>
+
+      <figure>
+				<img src="Dashboard 1.jpg" alt="" />
+				<figcaption>
+					The stacked bar charts illustrate the changing proportions of complaint types—such as Abuse of Authority, Discourtesy, Force, and Offensive Language—filed against NYPD officers of various races across different years.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>Before visualization, the dataset was pre-processed and the proportion of complaints of each type was calculated for visualization, 
+					rather than the number of complaints. </li>
+				<p1>2'. Using the proportion of complaint types rather than absolute numbers counters the bias that could arise from varying numbers of officers in each racial group. 
+					It ensures that the viewer assesses the complaint types based on their prevalence relative to the total complaints for each group, not the group size. 
+					This decision is persuasive as it aims to equalize the basis for comparison, making the visual representation of trends fairer and more relevant. 
+					Alternative methods like absolute numbers could skew the perception if one group has significantly more officers, potentially diluting the apparent rate of certain types of complaints.
+				</p1>
+				<li>Stack bar charts instead of line charts, scatter charts, or whatever.</li>
+				<p1>1.5'.  This method is effective for displaying how individual categories contribute to the whole over time, emphasizing the evolution of complaint types. 
+					It makes the cumulative trend apparent while also highlighting the distribution of categories within each year, which is less evident in line charts.
+				</p1>
+				<li>Easily distinguishable colors are used to represent different types of complaints</li>
+				<p1>2'. This choice is to enhance readability and allow for quick visual reference, which helps in drawing conclusions at a glance.</p1>
+				<li>Separate charts for each officer race.</li>
+				<p1>1'. By creating separate charts for each racial group of officers, the design avoids clutter and allows for focused comparison within each group. 
+					It is to isolate the data for clarity and to prevent overwhelming the viewer with too much information in a single chart, which might obscure the proportion and trend and make comparisons difficult.
+					However, they also present a challenge for cross-racial comparisons. This is because the viewer cannot directly see the differences side-by-side in the same visual space, which would allow for easier comparison. 
+					They must mentally switch between the charts, holding the information in memory, which can be cognitively demanding and might lead to less accurate comparisons.
+				</p1>
+			</ul>
+    </section>
+
+    <section>
+      <h3>AGAINST the Proposition</h3>
+
+      <figure>
+				<img src="Sheet 1.jpg" alt="" />
+				<figcaption>
+					The bubble chart tracks the number of complaints in four categories (Abuse of Authority, Discourtesy, Force, and Offensive Language) against NYPD officers of different ethnicities (Asian, Black, Hispanic, and White) over time, 
+					with the size of the bubbles corresponding to the number of complaints received each year.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>The dataset was not preprocessed, but visualized directly using the number of complaints.</li>
+				<p1>
+					1.5'. By not preprocessing the data to control for the size of the officer population within each racial group, 
+					the visualization can deceptively imply that certain races receive a disproportionately high number of complaints. 
+					This could persuade viewers that some racial groups are more prone to complaints without revealing that this might be due to there being more officers of that race.
+				</p1>
+				<li>The size of the circle is not clearly distinguished, and the size of the minimum value was manually raised.</li>
+				<p1>
+					2'. Artificially enlarge the smallest value circles can be deceptive, as it exaggerates the frequency of less common complaint types, misleading viewers about the true scale of issues. 
+					This technique makes the data seem more uniform across categories than it actually is, which could downplay serious discrepancies or overstate minor ones. 
+					The persuasive intent here is to manipulate the viewer's perception by creating a false sense of scale.
+				</p1>
+				<li>Reduced color saturation and transparency.</li>
+				<p1>
+					1'. Utilizing muted colors and increased transparency can serve to obscure and downplay data, potentially making significant differences less noticeable and less alarming. 
+					This approach might not be very effective as a deceptive tactic since discerning viewers could quickly notice the dilution of the data's visual impact, leading them to question the integrity of the visualization. 
+					If the audience detects this subtlety, it could erode trust and result in rejection of the information presented. 
+				</p1>
+			</ul>
+    </section>
+
+    <section>
+      <h2>Final Reflection</h2>
+
+      <p>In reflecting on the design process across both visualizations, it becomes evident that ethical analysis and visualization is a nuanced field requiring careful consideration of both data integrity and audience perception. The straightforward aspects, such as selecting data sets and determining the type of visual representation (bar charts, line graphs, etc.), were foundational. However, ensuring these choices conveyed the intended message without compromising data truthfulness presented a significant challenge. Particularly, navigating the fine line between simplifying complex data for accessibility and oversimplifying to the point of distortion was a complex but enlightening journey.</p>
+	  <p>What surprised me the most was the depth of responsibility that comes with visual data representation. Small design choices, such as color schemes or scale adjustments, could dramatically influence the viewer's interpretation. This experience has led me to define “ethical analysis and visualization” as a practice deeply rooted in honesty, transparency, and respect for the data and its implications on the audience. It's about crafting visual stories that are not only engaging but also fair and informative, avoiding any manipulation that could lead to misinterpretation or bias.</p>
+	  <p>In the journey of distinguishing between ethical and misleading data visualization, I've come to believe that the bounds largely hinge on the intention behind the presentation. If the exaggeration of data and the incorporation of affective or narrative design elements are employed to persuade the audience without betraying the fundamental truths of the data, such approaches can be deemed acceptable. It's the commitment to not distort or obscure the factual basis of the information that delineates ethical persuasion from manipulation.</p>
+    </section>
+	</main>
+</body>
+</html>
